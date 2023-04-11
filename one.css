@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center; 
+}
+.logo{
+    padding-top: 15px;  
+}
+.loginform{
+    display: flex;
+    justify-content: center;
+    margin: 6% auto;
+}
+.container{ 
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 450px;
+    margin-top: 25px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgb(7, 82, 194);
+    border: none;
+    color: rgb(238, 238, 227);
+} 
+.form{
+    width: 300px;
+    height: 400px;
+    color: rgb(247, 247, 239);
+    padding-top: 10px;
+}
+    
+.inputfield{
+    display: flex;
+    justify-content:flex-end;
+    padding: .5rem;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.labeling{
+    flex: 1;
+    font-size: large;
+}
+input{
+    width: 150px;
+    height: 20px;
+    flex: 2;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #151815;
+    color: rgb(241, 238, 238);
+    cursor: pointer;
+}
+.inputs:focus{
+    outline: none;
+    border-color: rgb(241, 239, 247);
+}
+.inputfield.success input{
+    border-color: rgb(3, 255, 3);
+}
+.inputfield.error input{
+    border-color: rgb(226, 15, 15);
+}
+.inputfield i{
+    visibility: hidden;
+    position: absolute;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+.inputfield.success i.fa-check-circle{
+    color: rgb(3, 255, 3) ;
+    visibility: visible;
+}
+.inputfield.error i.fa-exclamation-circle{
+    color: rgb(219, 12, 12);
+    visibility: visible;   
+} 
+small{
+    color: rgb(94, 16, 16);
+    font-size: medium;
+    padding-top: 20px;
+    position: absolute;
+    visibility: hidden;
+}
+.inputfield.error small{
+    visibility: visible;
+}
+.button  {
+    width: 60px;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    border-radius: 4px;
+    background-color: #0b83c9;
+    color: white;
+    border: none;
+    margin: 6% auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 80px;
+
+ }
+.button:hover {
+    background-color: #151815;
+}
+.form .newuser{
+    font-size:large;
+    justify-content: center;
+    display: flex;
+}
+.form .forgot{
+    display: flex;
+    margin-top: 30px;
+    width: 300px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-size: large;
+}
+.form a{
+    text-decoration: none;
+    color: rgb(0, 4, 8);
+  }
+  a:hover{
+    color: #d6ac16;
+   }
+.showpassword label{
+    float: right;
+    margin-right: 10px;
+    margin-top: -12px;
+    display: flex;
+}
+.showpassword input{
+    cursor: pointer;
+    width: 15px;
+    margin-top: -12px;
+    margin-right: 7px;
+    float: right;
+    accent-color: black;
+}
+.newuser {
+    margin-top: 30px;
+}
+.newuser a{
+    font-weight: bold;
+}

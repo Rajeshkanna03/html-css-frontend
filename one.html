@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batch8</title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+        <div class="logo">
+            <img src="logo.png" alt="amshuhu" width="100px" height="100px">
+        </div>
+        <div class="container">
+        <div class="loginform">
+        <h2>LOGIN HERE</h2>
+        </div> 
+            <form class="form" id="form">
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label>Username</label>
+                </div>
+            
+                    <input type="text" placeholder="enter name" id="username" >
+               
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> 
+                    <small>errorMsg</small>    
+                </div>
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label>Email</label>
+                </div>
+             
+                    <input type="email" placeholder="enter email" id="emailid">
+                
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>   
+                    <small>errorMsg</small>  
+                </div>
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label>Password</label>
+                </div>
+               
+                    <input type="password" placeholder="enter password" id="password">
+                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>  
+                    <small>errorMsg</small>   
+                </div>
+                <div class="showpassword">
+                    <label>Show Password</label>
+                    <input type="checkbox" onclick="myfunction()">
+                </div>
+                <div  class="forgot">
+
+                    <a href="forgot.html">Forgot password?</a>
+
+                </div>
+        
+                
+                    <button class="button">login</button>
+                    <span class="newuser">New user?<a href="signup.html">click here for signup</a></span>
+                
+            </form>
+    </div>
+    <script src="one.js"></script>
+</body>
+</html>
